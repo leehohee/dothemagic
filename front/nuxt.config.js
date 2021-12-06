@@ -96,7 +96,8 @@ module.exports = {
         https: false,
     },
     server:{
-        port:5000,
+        port: process.env.PORT || 80,
+        host: '0.0.0.0'
     },
     
 };
