@@ -91,13 +91,13 @@ module.exports = {
 
     ],
     axios:{
-        browserBaseURL: 'http://localhost:3085',
-        baseURL: 'localhost:3085',
+        browserBaseURL: 'http://localhost:3065',
+        baseURL: 'localhost:3065',
         https: false,
     },
     server:{
         port: process.env.PORT || 80,
-        host: '0.0.0.0'
+        
     },
     
 };

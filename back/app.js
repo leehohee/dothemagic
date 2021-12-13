@@ -21,7 +21,7 @@ passportConfig();
 
 app.use(morgan('dev'));
 app.use(cors({
-    origin: ['http://localhost:3000','http://dothemagic.net:3000','http://221.167.218.93:3000','http://localhost:4000'],
+    origin: ['http://localhost:3000','http://dothemagic.net:3000','http://221.167.218.93:3000','http://localhost:4000','http://localhost:80','http://localhost'],
     credentials: true,
 }));
 app.use('/', express.static('uploads'));
@@ -53,6 +53,6 @@ app.use('/hashtag', hashtagRouter);
 
 
 
-app.listen(3085, ()=>{
-    console.log(`백엔드 서버 ${3085}번 포트에서 작동중.`);
+app.listen(3065, ()=>{
+    console.log(`백엔드 서버 ${3065}번 포트에서 작동중.`);
 });
